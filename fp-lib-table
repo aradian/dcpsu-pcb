@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name custom-footprints)(type KiCad)(uri ${KIPRJMOD}/dcpsu-custom-footprints.pretty)(options "")(descr ""))
+  (lib (name oshw-logo)(type KiCad)(uri ${KIPRJMOD}/oshw-logo.pretty)(options "")(descr ""))
+  (lib (name PCIe-footprint)(type KiCad)(uri ${KIPRJMOD}/PCIe-footprint)(options "")(descr ""))
+)
