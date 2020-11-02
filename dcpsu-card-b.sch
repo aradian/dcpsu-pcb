@@ -125,25 +125,14 @@ Wire Wire Line
 Text Label 4250 1750 0    50   ~ 0
 PWR-EN
 $Comp
-L power:+5V #PWR026
-U 1 1 5EB29CED
-P 5100 700
-F 0 "#PWR026" H 5100 550 50  0001 C CNN
-F 1 "+5V" H 5115 873 50  0000 C CNN
-F 2 "" H 5100 700 50  0001 C CNN
-F 3 "" H 5100 700 50  0001 C CNN
-	1    5100 700 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5EB29E8B
 P 4900 1150
 F 0 "C7" H 5015 1196 50  0000 L CNN
-F 1 "1u" H 5015 1105 50  0000 L CNN
+F 1 "10u" H 5015 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 1000 50  0001 C CNN
 F 3 "" H 4900 1150 50  0001 C CNN
-F 4 "399-7847-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 4 "478-10766-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    4900 1150
 	0    -1   -1   0   
 $EndComp
@@ -169,7 +158,7 @@ F 0 "C11" H 6615 1396 50  0000 L CNN
 F 1 "0.1u" H 6615 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6538 1200 50  0001 C CNN
 F 3 "" H 6500 1350 50  0001 C CNN
-F 4 "399-1099-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
+F 4 "1276-1000-1-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
 	1    6500 1350
 	1    0    0    -1  
 $EndComp
@@ -228,7 +217,7 @@ F 0 "C8" H 5165 2096 50  0000 L CNN
 F 1 "0.1u" H 5165 2005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5088 1900 50  0001 C CNN
 F 3 "" H 5050 2050 50  0001 C CNN
-F 4 "399-1099-1-ND" H 5050 2050 50  0001 C CNN "Digi-Key_PN"
+F 4 "1276-1000-1-ND" H 5050 2050 50  0001 C CNN "Digi-Key_PN"
 	1    5050 2050
 	1    0    0    -1  
 $EndComp
@@ -2254,31 +2243,10 @@ Wire Wire Line
 	2250 1950 2250 1900
 Wire Wire Line
 	2250 1600 2250 1200
-$Comp
-L Device:R R9
-U 1 1 5F7DE9F0
-P 5100 900
-F 0 "R9" H 5170 946 50  0000 L CNN
-F 1 "2k" H 5170 855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5030 900 50  0001 C CNN
-F 3 "~" H 5100 900 50  0001 C CNN
-F 4 "RMCF0603FT2K00CT-ND" H 0   0   50  0001 C CNN "Digi-Key_PN"
-	1    5100 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 1150 5100 1150
-Wire Wire Line
-	5100 1150 5100 1050
-Connection ~ 5100 1150
 Wire Wire Line
 	4750 1150 4700 1150
 Wire Wire Line
 	4700 1150 4700 1200
-Wire Wire Line
-	5100 750  5100 700 
-Wire Wire Line
-	5100 1150 5250 1150
 Wire Wire Line
 	10200 3700 10400 3700
 Text GLabel 10800 3000 2    50   Output ~ 0
@@ -2369,4 +2337,6 @@ F 4 "RMCF0603JT33K0CT-ND" H 2250 1750 50  0001 C CNN "Digi-Key_PN"
 	1    2250 1750
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	5050 1150 5250 1150
 $EndSCHEMATC
