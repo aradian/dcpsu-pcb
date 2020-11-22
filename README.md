@@ -14,7 +14,9 @@ DCPSU - schematics and PCB layouts
 ### Backplane-testboard:
 - Platform for card testing/development
 
-
+### Component selection/design
+- [Buck regulator DAC control](https://www.desmos.com/calculator/go5xqh90k3)
+- [Buck regulator circuit attributes](https://www.desmos.com/calculator/a7n2unce4d)
 
 ### LICENSE
 [CreativeCommons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
