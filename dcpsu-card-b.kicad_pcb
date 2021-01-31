@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 46)
+    (drawings 49)
     (tracks 657)
     (zones 0)
     (modules 91)
@@ -4252,6 +4252,15 @@
       (xy -1.971615 -1.454739) (xy -1.908759 -1.469184)) (layer B.SilkS) (width 0.01))
   )
 
+  (gr_text "FIX feedback net" (at 92 92) (layer Cmts.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text "FIX feedback layout" (at 84 102) (layer Cmts.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text "FIX edge conn footprint" (at 62 93) (layer Cmts.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text "Open Source Hardware\n© Kyle E\nLicense: CreativeCommons BY-SA" (at 100 130) (layer B.Cu)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )

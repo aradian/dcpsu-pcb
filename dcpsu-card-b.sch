@@ -2339,4 +2339,32 @@ F 4 "RMCF0603JT33K0CT-ND" H 2250 1750 50  0001 C CNN "Digi-Key_PN"
 $EndComp
 Wire Wire Line
 	5050 1150 5250 1150
+Text Notes 6450 3100 0    50   ~ 0
+FIX: replace with dac
+Text Notes 3900 5450 0    50   ~ 0
+MCP47FEB uses same addr range as MCP4706
+Text Notes 4150 3350 0    50   ~ 0
+TEST POINTS!
+Text Notes 4200 2550 0    50   ~ 0
+FIX: alternative buck controllers with better footprint
+Text Notes 2550 1550 0    50   ~ 0
+FIX: card edge footprint is wrong
+Text Notes 3750 4850 0    50   ~ 0
+FIX: VREF decoupling cap
+Text Notes 5550 5250 0    50   ~ 0
+FIX: output caps
+Text Notes 2250 3150 0    50   ~ 0
+FIX: ~SHDN~ pin should be high
+Text Notes 9950 6050 0    50   ~ 0
+64mV/R=Iset\nIset >= 3mA\nR <= 21ohm
+Text Notes 4200 7050 0    50   ~ 0
+replace with diff amp IC?
+Text Notes 6700 5900 0    50   ~ 0
+comparator
+Text Notes 6900 4850 0    50   ~ 0
+V Amp\nGain = 10\n0 to 20.48V
+Text Notes 3700 2600 0    50   ~ 0
+2.048V
+Text Notes 8500 3600 0    50   ~ 0
+LD1084 uses feedback relative to fixed ref voltage
 $EndSCHEMATC
