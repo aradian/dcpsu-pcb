@@ -138,6 +138,29 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_D_TVS
+#
+DEF Device_D_TVS D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_TVS" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 -100 -50 0 0 -100 50 -100 -50 N
+P 4 0 1 8 20 50 0 50 0 -50 -20 -50 N
+P 4 0 1 8 100 50 100 -50 0 0 100 50 N
+X A1 1 -150 0 100 R 50 50 1 1 P
+X A2 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_L
 #
 DEF Device_L L 0 40 N N 1 F N
@@ -227,33 +250,25 @@ X PA4 9 700 400 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# dcpsu-custom-symbols_AOZ2151PQI-10
+# dcpsu-custom-symbols_LMR33640
 #
-DEF dcpsu-custom-symbols_AOZ2151PQI-10 U 0 40 Y Y 1 F N
-F0 "U" 0 -650 50 H V C CNN
-F1 "dcpsu-custom-symbols_AOZ2151PQI-10" 0 -50 50 V V C CNN
-F2 "custom-footprints:QFN-20-2EP_3x3mm_AOZ2151PQI-10" 0 100 50 H I C CNN
-F3 "" 0 100 50 H I C CNN
+DEF dcpsu-custom-symbols_LMR33640 U 0 40 Y Y 1 F N
+F0 "U" 0 500 50 H V C CNN
+F1 "dcpsu-custom-symbols_LMR33640" 0 400 50 H V C CNN
+F2 "Package_SO:TI_SO-PowerPAD-8" -100 400 50 H I C CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flmr33640" 0 500 50 H I C CNN
+F4 "296-LMR33640ADDARCT-ND" 100 600 50 H V C CNN "Digi-Key_PN"
 DRAW
-S 350 550 -350 -550 0 1 0 f
-X ~PFMb 1 -450 0 100 R 50 50 1 1 I
-X PGND 10 450 -450 100 L 50 50 1 1 W
-X PGND 11 450 -450 100 L 50 50 1 1 W N
-X PGND 12 450 -450 100 L 50 50 1 1 W N
-X LX 13 450 100 100 L 50 50 1 1 P N
-X LX 14 450 100 100 L 50 50 1 1 P N
-X EN 15 -450 -150 100 R 50 50 1 1 I
-X BST 16 450 300 100 L 50 50 1 1 P
-X VCC 17 -450 450 100 R 50 50 1 1 B
-X SS 18 -450 -300 100 R 50 50 1 1 P
-X FB 2 450 -150 100 L 50 50 1 1 I
-X AGND 3 450 -300 100 L 50 50 1 1 W
-X IN 4 450 450 100 L 50 50 1 1 W
-X IN 5 450 450 100 L 50 50 1 1 W N
-X IN 6 450 450 100 L 50 50 1 1 W N
-X IN 7 450 450 100 L 50 50 1 1 W N
-X IN 8 450 450 100 L 50 50 1 1 W N
-X LX 9 450 100 100 L 50 50 1 1 w
+S -350 350 350 -350 0 1 0 f
+X PGND 1 -100 -450 100 U 50 50 1 1 W
+X VIN 2 -450 250 100 R 50 50 1 1 W
+X EN 3 -450 100 100 R 50 50 1 1 I
+X PG 4 -450 -100 100 R 50 50 1 1 O
+X FB 5 450 -250 100 L 50 50 1 1 P
+X VCC 6 -450 -250 100 R 50 50 1 1 P
+X BOOT 7 450 250 100 L 50 50 1 1 P
+X SW 8 450 100 100 L 50 50 1 1 P
+X AGND 9 100 -450 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -398,6 +413,32 @@ X SCL 5 -400 0 100 R 50 50 1 1 I
 X SDA 6 -400 -100 100 R 50 50 1 1 B
 X A0 7 -400 -200 100 R 50 50 1 1 I
 X A1 8 -400 -300 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_Trimmer-Potentiometers_TC33X-2-103E
+#
+DEF dk_Trimmer-Potentiometers_TC33X-2-103E POT 0 0 Y Y 1 F N
+F0 "POT" -210 170 60 H V C CNN
+F1 "dk_Trimmer-Potentiometers_TC33X-2-103E" 10 -110 60 H V C CNN
+F2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" 200 200 60 H I L CNN
+F3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" 200 300 60 H I L CNN
+F4 "TC33X-103ETR-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "TC33X-2-103E" 200 500 60 H I L CNN "MPN"
+F6 "Potentiometers, Variable Resistors" 200 600 60 H I L CNN "Category"
+F7 "Trimmer Potentiometers" 200 700 60 H I L CNN "Family"
+F8 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ETR-ND/612858" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRIMMER 10K OHM 0.1W J LEAD TOP" 200 1000 60 H I L CNN "Description"
+F11 "Bourns Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 0 200 0 125 N
+P 4 0 1 0 -25 125 25 125 0 75 -25 125 F
+P 9 0 1 0 -100 0 -75 50 -50 -50 -25 50 0 -50 25 50 50 -50 75 50 100 0 N
+X CCW 1 -200 0 100 R 50 40 1 1 P
+X Wiper 2 0 300 100 D 50 40 1 1 P
+X CW 3 200 0 100 L 50 40 1 1 P
 ENDDRAW
 ENDDEF
 #

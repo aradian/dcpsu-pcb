@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 1001878410200TLF)(type Legacy)(uri ${KIPRJMOD}/1001878410200TLF.lib)(options "")(descr ""))
+  (lib (name 10018784-10201TLF)(type Legacy)(uri ${KIPRJMOD}/10018784-10201TLF.lib)(options "")(descr ""))
+)

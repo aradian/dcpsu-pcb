@@ -151,4 +151,5 @@
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri /home/kyle/Documents/dcpsu/digikey-kicad-library-master/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr ""))
   (lib (name dcpsu-custom-symbols)(type Legacy)(uri ${KIPRJMOD}/dcpsu-custom-symbols.lib)(options "")(descr ""))
   (lib (name PCIe-connector-symbol)(type Legacy)(uri ${KIPRJMOD}/10018784-10201TLF.lib)(options "")(descr ""))
+  (lib (name 1001878410200TLF)(type Legacy)(uri /home/kyle/Documents/dcpsu/dcpsu-pcb/1001878410200TLF.lib)(options "")(descr ""))
 )

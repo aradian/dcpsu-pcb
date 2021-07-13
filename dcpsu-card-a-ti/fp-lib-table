@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name dcpsu-custom-footprints)(type KiCad)(uri /home/kyle/Documents/dcpsu/dcpsu-pcb/dcpsu-custom-footprints.pretty)(options "")(descr ""))
+)
